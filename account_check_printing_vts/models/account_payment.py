@@ -3,7 +3,7 @@ from odoo import models, api
 from odoo.addons.l10n_ca_check_printing.models.account_payment import account_payment
 from odoo.addons.l10n_ca_check_printing.report.print_check import report_print_check 
 
-@api.multi
+#@api.multi
 def do_print_checks(self):
     if self:
         check_layout = self[0].company_id.account_check_printing_layout

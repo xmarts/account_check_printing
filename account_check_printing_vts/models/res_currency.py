@@ -18,7 +18,7 @@ CURRENCY_DISPLAY_PATTERN = re.compile(r'(\w+)\s*(?:\((.*)\))?')
 
 from odoo.addons.base.models.res_currency import Currency
 
-@api.multi
+#@api.multi
 def amount_to_text(self, amount):
     self.ensure_one()
     def _num2words(number, lang):
